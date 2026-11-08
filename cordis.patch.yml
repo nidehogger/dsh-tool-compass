@@ -1,0 +1,9 @@
+# dsh-tool-compass bundle patch: insert the tool-compass host plugin row.
+# Applied automatically by `dsh plugin add` through the dsh.bundle manifest.
+- insert:
+    - id: tool-compass
+      name: 'dsh-tool-compass'
+      config:
+        enabled: true
+        classifyOnStart: true
+        classifyOnChange: true

@@ -1,0 +1,13 @@
+{
+  "name": "dsh-tool-compass",
+  "version": "0.1.0",
+  "description": "Model-classified tool compass for DeepSeek Harness: agents see functional categories only and pull specific tools on demand, cutting per-turn tool-schema tokens.",
+  "type": "module",
+  "main": "index.js",
+  "exports": { ".": "./index.js", "./package.json": "./package.json" },
+  "files": ["index.js", "lib/", "cordis.patch.yml", "README.md", "LICENSE"],
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "tools", "mcp", "context", "token", "router"],
+  "license": "MIT",
+  "engines": { "dsh": ">=0.2.2-rc.1", "node": ">=20" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}
